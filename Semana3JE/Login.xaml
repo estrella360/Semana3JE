@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Semana3JE.Login">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            
+                <Label Text="Welcome" FontSize="20" HorizontalTextAlignment="Center" />
+            <Image Source="logo.PNG" />
+            <Grid>
+                <Grid.RowDefinitions>
+                     <RowDefinition/>
+                     <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                     <ColumnDefinition/>
+                     <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="User" FontSize="18" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtUser" Placeholder="Ingrese el User" Grid.Row="0" Grid.Column="0"/>
+
+                <Label Text="PSW" FontSize="18" Grid.Row="1" Grid.Column="1"/>
+                <Entry x:Name="txtPsw" Placeholder="Ingrese la contraseña" IsPassword="True" Grid.Row="1" Grid.Column="1"/>
+
+            </Grid>
+             <Button x:Name="btnIniciar" Text="INICIAR SESION" Clicked="btnIniciar_Clicked"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
